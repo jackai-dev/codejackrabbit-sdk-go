@@ -1,0 +1,216 @@
+{
+  "contract_fingerprint": "b06781a26c4469e8f12830a04d455957bf620d42b9e1df155e93ee00f293d1c9",
+  "sdk_targets_version": "1.1.0",
+  "targets": [
+    {
+      "identity": {
+        "coordinates": "github.com/omniwrap/codejackrabbit-sdk@v0.3.4",
+        "ecosystem": "Go modules",
+        "entry": "codejackrabbit.NewClient",
+        "import": "import \"github.com/omniwrap/codejackrabbit-sdk\""
+      },
+      "operations": {
+        "analyzeContractDrift": {
+          "member": "V1.AnalyzeContractDrift",
+          "method": "POST",
+          "path": "/v1/analysis/contract-drift",
+          "resource": "V1",
+          "signature": "func (service *V1Service) AnalyzeContractDrift(ctx context.Context, params V1AnalyzeContractDriftParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "analyzePerfFinOps": {
+          "member": "V1.AnalyzePerfFinOps",
+          "method": "POST",
+          "path": "/v1/analysis/perf-finops",
+          "resource": "V1",
+          "signature": "func (service *V1Service) AnalyzePerfFinOps(ctx context.Context, params V1AnalyzePerfFinOpsParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "analyzeSupplyChain": {
+          "member": "V1.Analyze",
+          "method": "POST",
+          "path": "/v1/supply-chain/analyze",
+          "resource": "V1",
+          "signature": "func (service *V1Service) Analyze(ctx context.Context, params V1AnalyzeParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "buildAutofixBundle": {
+          "member": "V1.BuildAutofixBundle",
+          "method": "POST",
+          "path": "/v1/reviews/autofix",
+          "resource": "V1",
+          "signature": "func (service *V1Service) BuildAutofixBundle(ctx context.Context, params V1BuildAutofixBundleParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "collectDeveloperAudit": {
+          "member": "DeveloperIntelligence.CollectAudit",
+          "method": "POST",
+          "path": "/cli/managed/developer-audit",
+          "resource": "DeveloperIntelligence",
+          "signature": "func (service *DeveloperIntelligenceService) CollectAudit(ctx context.Context, params DeveloperIntelligenceCollectAuditParams, opts ...option.RequestOption) (*Response[DeveloperIntelligenceCollectAuditParamsResponse], error)"
+        },
+        "computeRiskRadar": {
+          "member": "V1.ComputeRiskRadar",
+          "method": "POST",
+          "path": "/v1/reviews/risk-radar",
+          "resource": "V1",
+          "signature": "func (service *V1Service) ComputeRiskRadar(ctx context.Context, params V1ComputeRiskRadarParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "createCodingTask": {
+          "member": "V1.NewCoding",
+          "method": "POST",
+          "path": "/v1/tasks",
+          "resource": "V1",
+          "signature": "func (service *V1Service) NewCoding(ctx context.Context, params V1NewCodingParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "createReview": {
+          "member": "V1.New",
+          "method": "POST",
+          "path": "/v1/reviews",
+          "resource": "V1",
+          "signature": "func (service *V1Service) New(ctx context.Context, params V1NewParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "currentDeveloperIdentity": {
+          "member": "DeveloperIntelligence.CurrentIdentity",
+          "method": "POST",
+          "path": "/cli/managed/developer-identity",
+          "resource": "DeveloperIntelligence",
+          "signature": "func (service *DeveloperIntelligenceService) CurrentIdentity(ctx context.Context, params DeveloperIntelligenceCurrentIdentityParams, opts ...option.RequestOption) (*Response[*ManagedDeveloperIdentity], error)"
+        },
+        "declareDeveloperProjectContext": {
+          "member": "DeveloperIntelligence.DeclareProjectContext",
+          "method": "POST",
+          "path": "/cli/managed/audit-context",
+          "resource": "DeveloperIntelligence",
+          "signature": "func (service *DeveloperIntelligenceService) DeclareProjectContext(ctx context.Context, params DeveloperIntelligenceDeclareProjectContextParams, opts ...option.RequestOption) (*Response[DeveloperIntelligenceDeclareProjectContextParamsResponse], error)"
+        },
+        "evaluateComplianceGate": {
+          "member": "V1.EvaluateGate",
+          "method": "POST",
+          "path": "/v1/compliance/gate",
+          "resource": "V1",
+          "signature": "func (service *V1Service) EvaluateGate(ctx context.Context, params V1EvaluateGateParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "exportSarif": {
+          "member": "V1.ExportSarif",
+          "method": "POST",
+          "path": "/v1/compliance/sarif",
+          "resource": "V1",
+          "signature": "func (service *V1Service) ExportSarif(ctx context.Context, params V1ExportSarifParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "finalizeMeteringQuota": {
+          "member": "V1.FinalizeMeteringQuota",
+          "method": "POST",
+          "path": "/v1/saas/metering/finalize",
+          "resource": "V1",
+          "signature": "func (service *V1Service) FinalizeMeteringQuota(ctx context.Context, params V1FinalizeMeteringQuotaParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "generateSbom": {
+          "member": "V1.Generate",
+          "method": "POST",
+          "path": "/v1/sbom",
+          "resource": "V1",
+          "signature": "func (service *V1Service) Generate(ctx context.Context, params V1GenerateParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "getAnalyticsRoi": {
+          "member": "V1.GetRoi",
+          "method": "GET",
+          "path": "/v1/analytics/roi",
+          "resource": "V1",
+          "signature": "func (service *V1Service) GetRoi(ctx context.Context, params V1GetRoiParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "getCapabilities": {
+          "member": "V1.Get",
+          "method": "GET",
+          "path": "/v1/capabilities",
+          "resource": "V1",
+          "signature": "func (service *V1Service) Get(ctx context.Context, params V1GetParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "getHealth": {
+          "member": "Health.Get",
+          "method": "GET",
+          "path": "/health",
+          "resource": "Health",
+          "signature": "func (service *HealthService) Get(ctx context.Context, params HealthGetParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "getSaasBlueprint": {
+          "member": "V1.GetBlueprint",
+          "method": "GET",
+          "path": "/v1/saas/blueprint",
+          "resource": "V1",
+          "signature": "func (service *V1Service) GetBlueprint(ctx context.Context, params V1GetBlueprintParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "getTriageQueue": {
+          "member": "V1.GetQueue",
+          "method": "GET",
+          "path": "/v1/triage",
+          "resource": "V1",
+          "signature": "func (service *V1Service) GetQueue(ctx context.Context, params V1GetQueueParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "issueSurfaceLease": {
+          "member": "V1.IssueSurfaceLease",
+          "method": "POST",
+          "path": "/v1/saas/surface-lease/issue",
+          "resource": "V1",
+          "signature": "func (service *V1Service) IssueSurfaceLease(ctx context.Context, params V1IssueSurfaceLeaseParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "listCodingTasks": {
+          "member": "V1.ListCoding",
+          "method": "GET",
+          "path": "/v1/tasks",
+          "resource": "V1",
+          "signature": "func (service *V1Service) ListCoding(ctx context.Context, params V1ListCodingParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "listWaitlist": {
+          "member": "V1.List",
+          "method": "GET",
+          "path": "/v1/waitlist",
+          "resource": "V1",
+          "signature": "func (service *V1Service) List(ctx context.Context, params V1ListParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "managedAuditSnapshots": {
+          "member": "DeveloperIntelligence.ManagedAuditSnapshots",
+          "method": "POST",
+          "path": "/cli/managed/audit-snapshots",
+          "resource": "DeveloperIntelligence",
+          "signature": "func (service *DeveloperIntelligenceService) ManagedAuditSnapshots(ctx context.Context, params DeveloperIntelligenceManagedAuditSnapshotsParams, opts ...option.RequestOption) (*Response[DeveloperIntelligenceManagedAuditSnapshotsParamsResponse], error)"
+        },
+        "planStackedPrSplit": {
+          "member": "V1.PlanStackedPrSplit",
+          "method": "POST",
+          "path": "/v1/analysis/split-pr",
+          "resource": "V1",
+          "signature": "func (service *V1Service) PlanStackedPrSplit(ctx context.Context, params V1PlanStackedPrSplitParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "providerCostEvidence": {
+          "member": "DeveloperIntelligence.ProviderCostEvidence",
+          "method": "POST",
+          "path": "/cli/managed/finops",
+          "resource": "DeveloperIntelligence",
+          "signature": "func (service *DeveloperIntelligenceService) ProviderCostEvidence(ctx context.Context, params DeveloperIntelligenceProviderCostEvidenceParams, opts ...option.RequestOption) (*Response[DeveloperIntelligenceProviderCostEvidenceParamsResponse], error)"
+        },
+        "registerWaitlist": {
+          "member": "V1.Register",
+          "method": "POST",
+          "path": "/v1/waitlist",
+          "resource": "V1",
+          "signature": "func (service *V1Service) Register(ctx context.Context, params V1RegisterParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "reserveMeteringQuota": {
+          "member": "V1.ReserveMeteringQuota",
+          "method": "POST",
+          "path": "/v1/saas/metering/reserve",
+          "resource": "V1",
+          "signature": "func (service *V1Service) ReserveMeteringQuota(ctx context.Context, params V1ReserveMeteringQuotaParams, opts ...option.RequestOption) (*Response[JSONValue], error)"
+        },
+        "submitDeveloperEvidence": {
+          "member": "DeveloperIntelligence.SubmitEvidence",
+          "method": "POST",
+          "path": "/cli/managed/developer-evidence",
+          "resource": "DeveloperIntelligence",
+          "signature": "func (service *DeveloperIntelligenceService) SubmitEvidence(ctx context.Context, params DeveloperIntelligenceSubmitEvidenceParams, opts ...option.RequestOption) (*Response[DeveloperIntelligenceSubmitEvidenceParamsResponse], error)"
+        }
+      },
+      "package_directory": "../codejackrabbit-sdk",
+      "package_manifest": "go.mod",
+      "reference": "api.md",
+      "renderer": "go"
+    }
+  ]
+}
